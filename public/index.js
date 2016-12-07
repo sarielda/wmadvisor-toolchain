@@ -15,7 +15,7 @@
  */
 
 // Create the Tradeoff Analytics Client under the 'ta' node, with default options
-var taClient = new TradeoffAnalytics('ta');
+var taClient = new TradeoffAnalytics('ta', {useProxy: true});
   
   // Start the client
 taClient.start(function(){
