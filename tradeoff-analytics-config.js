@@ -20,7 +20,7 @@ var watson = require('watson-developer-cloud'),
     extend = require('util')._extend;
 
 var defaultConnectionDetails = {
-    url: 'https://gateway.watsonplatform.net/tradeoff-analytics/api/v1',
+    url: 'https://gateway.watsonplatform.net/tradeoff-analytics/api',
     version: 'v1'
 };
 
@@ -68,7 +68,7 @@ module.exports = {
       params.metadata_header = getMetadata(req);
       
       tradeoffAnalytics.dilemmas(params, function(err, dilemma) {
-        if (err) 
+        if (err)
           return res.status(Number(err.code) || 502).send(err.error || err.message || 'Error processing the request');
         else
           return res.json(dilemma);

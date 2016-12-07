@@ -3,8 +3,9 @@
   "version": "0.1.3",
   "description": "A sample nodejs app for Bluemix that use the Tradeoff Analytics service",
   "dependencies": {
+    "body-parser": "^1.15.2",
     "express": "~4.13.4",
-    "watson-developer-cloud": "^1.3.0"  
+    "watson-developer-cloud": "^1.3.0"
   },
   "engines": {
     "node": ">=0.10.38"
@@ -18,6 +19,10 @@
     {
       "name": "Dolev Dotan",
       "email": "dotan@il.ibm.com"
+    },
+    {
+      "name": "David Boaz",
+      "email": "davidbo@il.ibm.com"
     }
   ],
   "license": "Apache-2.0",
